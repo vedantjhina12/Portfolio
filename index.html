@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-color: #0d1b2a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1b263b;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #8ecae6;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(to right, #1b263b, #0d1b2a);
+        }
+
+        .hero .content {
+            max-width: 50%;
+        }
+
+        .hero .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero .content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #a9b4c2;
+        }
+
+        .hero .content .buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .hero .content .buttons .btn {
+            padding: 0.8rem 1.5rem;
+            background-color: #8ecae6;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero .content .buttons .btn:hover {
+            background-color: #219ebc;
+        }
+
+        .hero img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .work-experience {
+            padding: 3rem 2rem;
+            background-color: #0d1b2a;
+            text-align: center;
+        }
+
+        .work-experience h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #8ecae6;
+        }
+
+        .work-experience .timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .work-experience .card {
+            background: #1b263b;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-experience .card img {
+            width: 40px;
+            margin-bottom: 1rem;
+        }
+
+        .work-experience .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .work-experience .card p {
+            color: #a9b4c2;
+        }
+
+        footer {
+            background: #1b263b;
+            color: #a9b4c2;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        footer ul li a:hover {
+            color: #8ecae6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vedant's Portfolio</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Hi, I'm <span style="color: #8ecae6;">Vedant</span></h1>
+            <p>A passionate Web Developer dedicated to crafting beautiful and functional websites.</p>
+            <div class="buttons">
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit GitHub</button>
+            </div>
+        </div>
+        <img src="developer.png" alt="Developer Illustration">
+    </section>
+
+    <section class="work-experience">
+        <h2>My Work Experience</h2>
+        <div class="timeline">
+            <div class="card">
+                <img src="5072860.png" alt="HTML">
+                <h3>HTML Developer (2023-2024)</h3>
+                <p>I started learning HTML in school and can now create robust websites.</p>
+            </div>
+            <div class="card">
+                <img src="css.png" alt="CSS">
+                <h3>CSS Developer (2024-Present)</h3>
+                <p>Currently refining my CSS skills at SRM University.</p>
+            </div>
+            <div class="card">
+                <img src="download1.png" alt="Python">
+                <h3>Python Developer (2022-2023)</h3>
+                <p>Learnt Python in college and achieved excellent grades.</p>
+            </div>
+            <div class="card">
+                <img src="c++.png" alt="C++">
+                <h3>C++ Developer (2024-2025)</h3>
+                <p>Developing expertise in C++ during my second semester.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>Vedant's Portfolio | All Rights Reserved &copy; 2025</p>
+    </footer>
+</body>
+</html>
